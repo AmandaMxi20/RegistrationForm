@@ -49,18 +49,53 @@ public static void main(String[]args) {
 	//Physical address
 	System.out.print("Enter your physical address:");
 	int streetNo= user_input.nextInt();
-	String streetName = user_input.next();
-	String suburb= user_input.next();
-	String city = user_input.next();
+	String streetName = user_input.nextLine();
+	String suburb= user_input.nextLine();
+	String city = user_input.nextLine();
 	int postcode = user_input.nextInt();
-	System.out.println("Your Address:" + streetNo + " " + streetName + " " + suburb
-			+ " " + city + " " + postcode );
+	if(postcode<4) {
+		System.out.println("Postcode is a 4 digit code. TRY AGAIN");
+	}
+	else {
+	System.out.println("Your Address:" + streetNo + " " + streetName + "\n " + suburb
+			+ " \n" + city + "\n " + postcode );
+	}
+	
+	//Parents Citizenship
+	System.out.print("Enter your citizenship");
+	String citizenship = user_input.nextLine();
 	
 	
 	
 	
-
+	
+	
+	//parent document status
+	//name
+	System.out.println("Enter your Parent's or Guardian name");
+	String pname = user_input.nextLine();
+	System.out.println("Name:" + pname);
+	
+	//surname 
+	System.out.println("Enter surname:");
+	String psurname= user_input.nextLine();
+	System.out.println("Surname: " + psurname);
+	
+	//gender
+	String gender = user_input.nextLine();
+	boolean female = true;
+	boolean male = true;
+	
+	if(female) {
+		System.out.println("You are a female" + gender);
+	}
+	else {
+		System.out.println("You are a Male "+ gender);
+	}
+	
+	
 	
 }
+	
 
 }
