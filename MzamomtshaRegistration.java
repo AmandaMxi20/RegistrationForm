@@ -63,7 +63,14 @@ public static void main(String[]args) {
 	
 	//Parents Citizenship
 	System.out.print("Enter your citizenship");
-	String citizenship = user_input.nextLine();
+	boolean citizenship = user_input.nextBoolean();
+	boolean SouthAfrican = true; boolean other = false;
+	if (citizenship = SouthAfrican) {
+	System.out.println(" You are a South African citizen");
+	}
+	else {
+		System.out.println("You are a non- SA citizen");
+	}
 	
 	
 	
@@ -71,6 +78,27 @@ public static void main(String[]args) {
 	
 	
 	//parent document status
+	System.out.println("Document status");
+	boolean status = user_input.nextBoolean();
+	boolean employed=true; boolean unemployed = true; boolean selfEmployed =true;
+	
+	if(status=employed) {
+		System.out.println("Employed");
+	}
+	else if (status = unemployed) {
+		System.out.println("Unemployed");
+	}
+	else {
+		System.out.println("self Employed");
+	}
+	
+	
+	
+	
+
+	
+	
+	
 	//name
 	System.out.println("Enter your Parent's or Guardian name");
 	String pname = user_input.nextLine();
@@ -82,18 +110,19 @@ public static void main(String[]args) {
 	System.out.println("Surname: " + psurname);
 	
 	//gender
-	String gender = user_input.nextLine();
+	boolean gender = user_input.nextBoolean();
 	boolean female = true;
 	boolean male = true;
 	
-	if(female) {
-		System.out.println("You are a female" + gender);
+	
+	if(gender= female) {
+		System.out.println("You are a female" );
 	}
 	else {
-		System.out.println("You are a Male "+ gender);
+		System.out.println("You are a Male ");
 	}
 	
-	
+	System.out.println(gender);
 	
 }
 	
